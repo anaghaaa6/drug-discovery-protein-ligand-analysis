@@ -109,47 +109,31 @@ The analysis identifies protein residues within a 4 Å proximity cutoff of the b
 
 The analysis identified 26 nearby protein residues using this cutoff.
 
-Results
+## Results
 
-The project generates:
+### Molecular Structures
 
-Molecular descriptor CSV
-Molecular weight comparison
-LogP comparison
-TPSA comparison
-Ligand structure visualization
-Lipinski drug-likeness results
-Protein–ligand interaction CSV
-Protein–ligand distance visualization
-Important Note
+![Ligand Structures](results/ligand_structures.png)
 
-The protein–ligand analysis is a structural proximity analysis, not a molecular docking calculation.
+### Molecular Weight Comparison
 
-A residue being located within 4 Å of the ligand does not by itself establish a specific interaction such as a hydrogen bond or salt bridge.
+![Molecular Weight Comparison](results/molecular_weight_comparison.png)
 
-Lipinski Rule of Five is a drug-likeness guideline and does not establish biological activity, efficacy, or clinical suitability.
+### LogP Comparison
 
-How to Run
-1. Create a virtual environment
-python -m venv venv
-2. Activate the environment
+![LogP Comparison](results/logp_comparison.png)
 
-Windows:
+### TPSA Comparison
 
-venv\Scripts\activate
-3. Install dependencies
-pip install -r requirements.txt
-4. Run molecular analysis
-python src\molecular_analysis.py
-5. Generate molecular property visualizations
-python src\visualization.py
-6. Generate ligand structure visualization
-python src\molecule_visualization.py
-7. Run protein–ligand analysis
-python src\protein_ligand_analysis.py
-8. Generate interaction visualization
-python src\interaction_visualization.py
-Author
+![TPSA Comparison](results/tpsa_comparison.png)
+
+### Protein–Ligand Distance Analysis
+
+![Protein–Ligand Distance Analysis](results/protein_ligand_distance_analysis.png)
+
+The analysis identified 26 protein residues within 4 Å of the bound ligand MK1 in the selected 1HSG structure.
+
+The molecular descriptor results and protein–ligand interaction data are available as CSV files in the `results/` directory.
 
 Anagha S
 
